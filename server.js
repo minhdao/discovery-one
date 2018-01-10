@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // app variables
 var author = 'mdao';
-var port = 3000;
+const port = process.env.PORT || 3000;
 var app = express();
 
 // register partials
