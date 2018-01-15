@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "hbs": "^4.0.1",
+    "request": "^2.83.0",
     "stellar-sdk": "^0.8.0"
   }
 }
