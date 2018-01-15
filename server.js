@@ -60,12 +60,11 @@ app.get('/stellar', (req, res) => {
     }, (error, response, body) => {
         if(!error){
             console.log(body);
+            res.render('horizon.hbs', {
+                data: body
+            });
         }
     });
-    // res.render('home.hbs', {
-    //     pageName: 'welcome home',
-    //     content: 'home sweet home',
-    // });
 });
 
 app.get('/about', (req, res) => {
