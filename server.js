@@ -53,6 +53,21 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/stellar', (req, res) => {
+    request({
+        url: `https://horizon-testnet.stellar.org`,
+        json: true
+    }, (error, response, body) => {
+        if(!error){
+            console.log(body);
+        }
+    });
+    // res.render('home.hbs', {
+    //     pageName: 'welcome home',
+    //     content: 'home sweet home',
+    // });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageName: 'all about about',
