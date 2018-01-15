@@ -21,6 +21,10 @@ hbs.registerHelper('getAuthor', () => {
     return author;
 });
 
+hbs.registerHelper('prettyPrint', (data) => {
+    return JSON.stringify(data, undefined, 2);	
+});
+
 hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase() + '!!!!!!';
 });
