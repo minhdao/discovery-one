@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 const stellar = require('stellar-sdk');
+const request = require('request');
 
 // app variables
 var author = 'mdao';
